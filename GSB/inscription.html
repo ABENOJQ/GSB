@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Quentin">
+	<meta name="description" content="Inscription">
+	<title>Inscription GSB</title>
+	<link rel="stylesheet" href="../css/param.css">
+	<style>
+        body {
+            background-image: url(../images/1erePage.jpg);
+			background-size: 100%;
+			font-family:  Arial, Helvetica, sans-serif;
+
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+		
+	</style>
+</head>
+
+
+<body>
+	<form action="/Ma page de traitement" method="post"  id="forminscription">
+		<img class="logoInscription" src="../images/logo.png" alt="logo">	
+		<h1 ><u>Inscription:</u></h1>
+		<p><br/></p>
+			<label for="prenom"><b>Prénom :</b></label><input type="text" id="prenom" name="prenom">
+			<p><br/></p>	
+			<label for="Nom"><b>Nom :</b></label><input type="text" id="Nom" name="Nom">
+				<p><br/></p>
+			<label for="adresse"><b>adresse&nbsp;:</b></label>
+			<input type="text" id="adresse" name="adresse">
+			<p><br/></p>
+			<label for="Cp"><b>Code Postale:</b></label>
+			<input type="number" id="Cp" name="Cp">
+			<p><br/></p>
+			
+			<label for="ville"><b>Ville:</b></label>
+			<input type="text" id="ville" name="ville">
+			<p><br/></p>
+			<input type="checkbox" id="cgu" name="user_cgu">
+			<label for="cgu"><b>J'accepte les conditions générales d'utilisation</b></label>
+			
+			<p><br/></p>
+			
+			
+			<label for="news"><b>J'accepte de recevoir des mails lors de nouveaux événements</b></label>
+			
+		
+			
+			<input type="checkbox" id="news" name="user_news">
+			
+			<p><br/></p>
+			<input type="submit" value="valider">
+	
+	</form>
+</body>

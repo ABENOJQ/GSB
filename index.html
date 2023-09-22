@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Quentin">
+	<meta name="description" content="Formulaire de contact">
+	<title>Acceuil GSB </title>
+	<link rel="stylesheet" href="css\param.css">
+	<style>
+        body {
+            
+            background-image: url(images/1erePage.jpg);
+	
+			font-family:  Arial, Helvetica, sans-serif;
+			width:100%;
+
+        }
+		* {
+            margin: 0;
+            padding: 0;
+        }
+     
+	</style>
+	
+	<script>
+	/*function getCookie(nom) {
+        /* Divise la chaîne de cookies et récupère toutes les paires nom=valeur individuelles dans un tableau.
+        var cookieArr = document.cookie.split(";");
+    
+        // Boucle à travers les éléments du tableau
+        for(var i = 0; i < cookieArr.length; i++) {
+            var cookiePair = cookieArr[i].split("=");
+    
+            /* Supprime les espaces au début du nom du cookie et le compare avec la chaîne de caractères donnée 
+            if(nom == cookiePair[0].trim()) {
+                // Decode the cookie value and return
+                return decodeURIComponent(cookiePair[1]);
+            }
+        }
+    
+        // Retourner null si non trouvé
+        return null;
+    }*/
+
+	
+	</script>
+	
+</head>
+
+
+<body>
+	<form action="GSB\connexion.php" method="post" id="formulaire">
+		
+		<img class="logo" src="images/logo.png" alt="logo">	
+		<label for="Identifiant" ><b>Identifiant :</b></label>
+			<input type="text" id="textid" name="Identifiant"  required placeholder="Entrez votre Identifiant">
+		<p><br/></p>
+		<label for="mdp"><b>Mot de passe :</b></label>
+			<input type="password" id="textmdp" name="mdp" required placeholder="Entrez votre mot de passe">
+		<p><br/></p>
+		<center>
+		<select name="Poste" id="choixPoste">
+			<option value="">--Choississez votre poste--</option>
+			<option value="comptable" id="comptable">comptable</option>
+			<option value="medicale" id="visiteur">visiteur</option>
+			
+		</select>
+		</center>
+		
+		<input type="submit" value="connexion" >
+		
+
+		<input type="button" onclick="window.location.href = 'GSB/inscription.html'" value="incscrivez-vous"/>
+	</form>
+</body>
